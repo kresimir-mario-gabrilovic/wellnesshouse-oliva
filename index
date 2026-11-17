@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wellness House Oliva – Dog-friendly holiday house with pool, sauna &amp; jacuzzi near Labin, Istria</title>
+<meta name="description" content="A private wellness house among old olive trees in Martinski near Labin, Istria. Heated saltwater pool, infrared sauna, jacuzzi and a fully fenced garden. Dogs very welcome.">
+<meta property="og:title" content="Wellness House Oliva – Istria">
+<meta property="og:description" content="Private heated saltwater pool, infrared sauna and jacuzzi in a fenced olive garden near Labin.">
+<meta property="og:image" content="images/drone.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#3d4728; --olive-2:#5b6a3a; --sage:#a9b38e; --sage-soft:#dfe3d0;
+    --cream:#f7f3ea; --paper:#fffdf8; --ink:#22261b; --muted:#646a57;
+    --terra:#b5653d; --line:#e4dfd0;
+    --serif:"Fraunces", Georgia, serif; --sans:"Work Sans", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacing:-.01em}
+  h2{font-size:clamp(30px,4vw,44px);margin-bottom:14px}
+  h3{font-size:22px;margin-bottom:6px}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--olive-2);font-weight:600;margin-bottom:10px}
+  .lead{font-size:19px;color:var(--muted);max-width:640px}
+  section{padding:96px 0}
+  @media(max-width:760px){section{padding:68px 0}}
+  .ph{width:100%;height:100%;object-fit:cover;border-radius:18px;background:var(--sage-soft)}
+
+  /* Nav */
+  nav{position:sticky;top:0;z-index:20;background:rgba(247,243,234,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .logo{font-family:var(--serif);font-size:22px;text-decoration:none;display:flex;align-items:center;gap:10px}
+  .logo small{font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .nav-links{display:flex;gap:26px;align-items:center;font-size:15px}
+  .nav-links a{text-decoration:none;color:var(--muted)}
+  .nav-links a:hover{color:var(--ink)}
+  .btn{display:inline-block;background:var(--olive);color:#fff !important;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:500;border:0;cursor:pointer;font-family:var(--sans);font-size:15px;transition:background .2s}
+  .btn:hover{background:var(--olive-2)}
+  .btn.ghost{background:transparent;color:var(--olive) !important;border:1.5px solid var(--olive)}
+  .btn.ghost:hover{background:var(--olive);color:#fff !important}
+  @media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+  /* Hero */
+  .hero{position:relative;min-height:90vh;display:flex;align-items:flex-end;color:#fff;padding:0 0 72px;
+    background:linear-gradient(180deg,rgba(20,25,12,.05) 30%,rgba(20,25,12,.72) 100%),url("images/drone.jpg") center 40%/cover no-repeat,#3d4728}
+  .hero h1{font-size:clamp(40px,6.4vw,78px);font-weight:300;max-width:820px;margin-bottom:18px;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+  .hero h1 em{font-style:italic;font-weight:300}
+  .hero p{font-size:19px;max-width:560px;opacity:.95;margin-bottom:30px}
+  .hero .btn{background:var(--paper);color:var(--olive) !important}
+  .hero .btn:hover{background:#fff}
+  .hero .btn.ghost{background:transparent;color:#fff !important;border-color:rgba(255,255,255,.75);margin-left:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+  .chip{font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.5);border-radius:999px;background:rgba(0,0,0,.15);backdrop-filter:blur(4px)}
+
+  .proof{background:var(--olive);color:#eef0e4;padding:26px 0}
+  .proof .wrap{display:flex;flex-wrap:wrap;gap:18px 56px;justify-content:center;align-items:center;font-size:15px}
+  .proof b{font-family:var(--serif);font-size:28px;font-weight:500;color:#fff;margin-right:8px}
+
+  .split{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+  .split.rev > :first-child{order:2}
+  @media(max-width:860px){.split{grid-template-columns:1fr;gap:36px}.split.rev > :first-child{order:0}}
+  .tall{aspect-ratio:4/5}
+  .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px;margin-top:30px}
+  .facts div{border-top:1px solid var(--line);padding-top:12px;font-size:15px;color:var(--muted)}
+  .facts strong{display:block;color:var(--ink);font-weight:600;font-size:16px}
+
+  .wellness{background:var(--paper)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  @media(max-width:860px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--cream);border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+  .card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .card .body{padding:24px}
+  .card p{color:var(--muted);font-size:15.5px}
+  .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--terra);margin-top:12px}
+  .winter{margin-top:30px;display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;background:var(--sage-soft);border-radius:18px;padding:18px}
+  .winter img{border-radius:12px;aspect-ratio:1;object-fit:cover}
+  @media(max-width:640px){.winter{grid-template-columns:1fr}}
+
+  .trio{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:520px}
+  .trio img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+  .trio img:first-child{grid-row:span 2}
+  @media(max-width:640px){.trio{height:380px}}
+
+  .rooms{background:var(--paper)}
+  .room-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:40px}
+  @media(max-width:760px){.room-grid{grid-template-columns:1fr}}
+  .room img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;margin-bottom:14px}
+  .room p{color:var(--muted);font-size:15.5px}
+
+  /* Gallery */
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 22px}
+  .filters button{font:inherit;font-size:14px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--paper);cursor:pointer;color:var(--muted)}
+  .filters button.on{background:var(--olive);color:#fff;border-color:var(--olive)}
+  .grid{columns:4 220px;column-gap:12px}
+  .grid button{display:block;width:100%;margin:0 0 12px;padding:0;border:0;background:none;cursor:zoom-in;break-inside:avoid;border-radius:12px;overflow:hidden}
+  .grid img{width:100%;height:auto;transition:transform .4s}
+  .grid button:hover img{transform:scale(1.03)}
+  .lb{position:fixed;inset:0;background:rgba(15,18,10,.94);z-index:50;display:none;align-items:center;justify-content:center}
+  .lb.on{display:flex}
+  .lb img{max-width:92vw;max-height:84vh;border-radius:8px}
+  .lb .cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#dfe3d0;font-size:14px}
+  .lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:48px;height:48px;border-radius:50%;font-size:22px;cursor:pointer}
+  .lb .x{top:18px;right:18px}.lb .p{left:18px;top:50%;transform:translateY(-50%)}.lb .n{right:18px;top:50%;transform:translateY(-50%)}
+
+  .area{background:var(--sage-soft)}
+  .distances{list-style:none;margin-top:28px}
+  .distances li{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(61,71,40,.18);font-size:17px}
+  .distances li span:last-child{font-family:var(--serif);font-size:20px;color:var(--olive)}
+  .area-pics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .area-pics img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px}
+  .area-pics img:first-child{grid-column:span 2;aspect-ratio:16/10}
+  .note{background:var(--paper);border-radius:18px;padding:22px;margin-top:40px;display:grid;grid-template-columns:180px 1fr;gap:22px;align-items:center}
+  .note img{border-radius:12px;aspect-ratio:3/4;object-fit:cover}
+  @media(max-width:640px){.note{grid-template-columns:1fr}}
+
+  .map{position:relative;margin-top:40px;border-radius:18px;overflow:hidden;height:420px;background:var(--paper) url("images/drone-top-sm.jpg") center/cover}
+  .map::before{content:"Map loads on the live website";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(247,243,234,.85);color:var(--muted);font-size:15px}
+  .map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .map .ring{position:absolute;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;background:rgba(181,101,61,.18);border:2px solid var(--terra);pointer-events:none}
+  .map .lbl{position:absolute;left:50%;top:calc(50% + 84px);transform:translateX(-50%);background:var(--olive);color:#fff;font-size:13px;padding:5px 12px;border-radius:999px;white-space:nowrap;pointer-events:none}
+  .map-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:12px;font-size:14px;color:var(--muted)}
+  .reviews{background:var(--paper)}
+  .rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:36px}
+  .rev{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:14px}
+  .rev q{font-family:var(--serif);font-size:20px;font-weight:300;line-height:1.4;quotes:"“" "”"}
+  .rev .who{font-size:14px;color:var(--muted);margin-top:auto}
+  .rev .src{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--terra)}
+  .dogs{background:var(--sage-soft)}
+  .dog-pics{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:260px 200px;gap:12px}
+  .dog-pics img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+  .dog-pics img:first-child{grid-column:span 2}
+  .ticks{list-style:none;margin-top:24px}
+  .ticks li{padding:10px 0 10px 30px;border-bottom:1px solid rgba(61,71,40,.15);position:relative;font-size:16.5px}
+  .ticks li::before{content:"✓";position:absolute;left:4px;color:var(--olive-2);font-weight:700}
+  .dog-quote{margin-top:24px;font-family:var(--serif);font-size:20px;font-weight:300;line-height:1.4}
+  .dog-quote cite{display:block;font-family:var(--sans);font-style:normal;font-size:14px;color:var(--muted);margin-top:6px}
+  .hosts{text-align:center}
+  .hosts blockquote{font-family:var(--serif);font-size:clamp(22px,2.6vw,30px);font-weight:300;max-width:760px;margin:0 auto 18px;line-height:1.4}
+  .hosts cite{font-style:normal;color:var(--muted);font-size:15px}
+
+  .enquire{background:var(--olive);color:#eef0e4}
+  .enquire h2{color:#fff}
+  .enquire .lead{color:#d6dbc5}
+  form{background:var(--paper);color:var(--ink);border-radius:20px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
+  @media(max-width:640px){form{grid-template-columns:1fr;padding:22px}}
+  label{font-size:13px;font-weight:600;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+  input,select,textarea{font:inherit;font-size:16px;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--sage);border-color:var(--sage)}
+  .full{grid-column:1/-1}
+  .checks{display:flex;flex-wrap:wrap;gap:18px}
+  .checks label{flex-direction:row;align-items:center;font-weight:500;color:var(--ink);font-size:15px}
+  .out{display:none;grid-column:1/-1;background:var(--cream);border-radius:12px;padding:18px;border:1px dashed var(--sage)}
+  .out.show{display:block}
+  .out pre{white-space:pre-wrap;font-family:var(--sans);font-size:14.5px;margin:10px 0 14px}
+  .out .row{display:flex;flex-wrap:wrap;gap:10px}
+  .small{font-size:13px;color:var(--muted)}
+  .err{color:#a23b2a;font-size:14px;grid-column:1/-1;display:none}
+
+  footer{background:#2a3119;color:#b9bfa6;padding:44px 0;font-size:14px}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+  footer a{color:#e6e9dc}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Oliva <small>Wellness House · Istria</small></a>
+    <div class="nav-links">
+      <a href="#house">The house</a>
+      <a href="#wellness">Wellness</a>
+      <a href="#dogs">Dogs</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#photos">Photos</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">The area</a>
+      <a class="btn" href="#enquire">Check availability</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="chips">
+      <span class="chip">🐕 Dogs welcome · fully fenced</span>
+      <span class="chip">Heated saltwater pool</span>
+      <span class="chip">Infrared sauna</span>
+      <span class="chip">Jacuzzi</span>
+    </div>
+    <h1>A private wellness house <em>among old olive trees</em></h1>
+    <p>Martinski, near Labin, Istria. Your own pool, sauna and jacuzzi – and a fully fenced garden where your dog can run free. Quiet countryside, with the coast at Rabac a short drive away.</p>
+    <a class="btn" href="#enquire">Check availability</a>
+    <a class="btn ghost" href="#photos">See all photos</a>
+  </div>
+</header>
+
+<div class="proof">
+  <div class="wrap">
+    <div><b>4.96</b>Guest favourite on Airbnb</div>
+    <div><b>9.6</b>Guest rating on Booking.com</div>
+    <div><b>★★★★</b>Classified holiday house</div>
+    <div><b>🐕</b>Fully fenced for dogs</div>
+  </div>
+</div>
+
+<section id="house">
+  <div class="wrap split">
+    <img class="ph tall" src="images/pool-house.jpg" alt="Pool with the house behind it" loading="lazy">
+    <div>
+      <div class="eyebrow">The house</div>
+      <h2>Room to slow down</h2>
+      <p class="lead">A fenced, private house in a garden of olive, pomegranate and mulberry trees. Light the barbecue, eat under the sail, and let the day go quiet.</p>
+      <div class="facts">
+        <div><strong>2 bedrooms</strong>Box-spring beds</div>
+        <div><strong>Up to 6 guests</strong>7 at most, on request</div>
+        <div><strong>2 bathrooms</strong>Walk-in showers</div>
+        <div><strong>Air conditioning</strong>Plus pellet fireplaces</div>
+        <div><strong>Fibre Wi-Fi</strong>Desk in the bedroom</div>
+        <div><strong>Washing machine</strong>For longer stays</div>
+        <div><strong>BBQ terrace</strong>Table for the whole group</div>
+        <div><strong>Self check-in</strong>Private parking</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wellness" id="wellness">
+  <div class="wrap">
+    <div class="eyebrow">Wellness</div>
+    <h2>Your own small spa</h2>
+    <p class="lead">Everything is private. No shared pool, no timetable.</p>
+    <div class="cards">
+      <article class="card">
+        <img src="images/pool-wide-sm.jpg" alt="Saltwater pool with loungers" loading="lazy">
+        <div class="body">
+          <h3>Heated saltwater pool</h3>
+          <p>Gentle on skin and eyes, with an olive tree laid in mosaic on the pool floor. Loungers, parasol and shade from the mulberry tree.</p>
+          <span class="tag">April–October · heating on request, extra charge</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/sauna-sm.jpg" alt="Infrared sauna with fresh towels" loading="lazy">
+        <div class="body">
+          <h3>Infrared sauna</h3>
+          <p>In the upstairs lounge, next to a sofa and a pellet stove. Fresh towels are ready.</p>
+          <span class="tag">Included · all year</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/jacuzzi-sm.jpg" alt="Jacuzzi on the covered terrace overlooking the garden" loading="lazy">
+        <div class="body">
+          <h3>Jacuzzi</h3>
+          <p>On the covered upstairs terrace, looking out over the garden and the pool.</p>
+          <span class="tag">Included · all year</span>
+        </div>
+      </article>
+    </div>
+    <div class="winter">
+      <img src="images/fireplace-sm.jpg" alt="Pellet fireplace" loading="lazy">
+      <div>
+        <h3>Just as good in winter</h3>
+        <p class="small" style="font-size:15.5px">The sauna and jacuzzi run all year, and pellet fireplaces keep the house warm. Istria is quiet and green in the off-season, and the house is yours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dogs" id="dogs">
+  <div class="wrap split">
+    <div class="dog-pics">
+      <img src="images/drone-top.jpg" alt="The fully fenced plot from above" loading="lazy">
+      <img src="images/fence-sm.jpg" alt="Fenced garden" loading="lazy">
+      <img src="images/garden-slope-sm.jpg" alt="Garden on several levels" loading="lazy">
+    </div>
+    <div>
+      <div class="eyebrow">Travelling with your dog</div>
+      <h2>Wellness for you, freedom for your dog</h2>
+      <p class="lead">A house with its own pool, sauna and jacuzzi is rare. One that also has a fully fenced garden for your dog is rarer still.</p>
+      <ul class="ticks">
+        <li>Garden on several levels, fenced all round</li>
+        <li>Dogs are welcome guests, not an exception</li>
+        <li>Dog-friendly beaches nearby: Girandella dog beach in Rabac, Prižinja and Prtlog</li>
+        <li>Quiet country lanes for walks</li>
+        <li>Our own list of walks, beaches and restaurants before you arrive</li>
+      </ul>
+      <p class="dog-quote">“Simply perfect for anyone travelling with dogs, a beautiful property.”
+        <cite>Franz, Heidi &amp; Lukas · Airbnb · translated from German</cite></p>
+    </div>
+  </div>
+</section>
+
+<section id="inside">
+  <div class="wrap split rev">
+    <div class="trio">
+      <img src="images/living-room.jpg" alt="Living room with fireplace" loading="lazy">
+      <img src="images/kitchen-sm.jpg" alt="Kitchen" loading="lazy">
+      <img src="images/dining-sm.jpg" alt="Dining table with stone wall" loading="lazy">
+    </div>
+    <div>
+      <div class="eyebrow">Inside</div>
+      <h2>Stone, wood and light</h2>
+      <p class="lead">Old Istrian stone walls and wooden beams, with a modern kitchen and a dining table for six. In the evening, the fireplace and a book in the patchwork armchair.</p>
+    </div>
+  </div>
+</section>
+
+<section class="rooms" id="rooms">
+  <div class="wrap">
+    <div class="eyebrow">Bedrooms &amp; bathrooms</div>
+    <h2>Sleep well</h2>
+    <div class="room-grid">
+      <div class="room">
+        <img src="images/bedroom-1.jpg" alt="Bedroom with double bed and single bed" loading="lazy">
+        <h3>Bedroom one</h3>
+        <p>A box-spring bed for two, with a single bed beside it, under the wooden beams.</p>
+      </div>
+      <div class="room">
+        <img src="images/bedroom-2.jpg" alt="Bedroom with double bed" loading="lazy">
+        <h3>Bedroom two</h3>
+        <p>A double box-spring bed and a desk by the window, if you need to work.</p>
+      </div>
+      <div class="room">
+        <img src="images/bathroom-1-sm.jpg" alt="Bathroom with walk-in shower" loading="lazy">
+        <h3>Bathrooms</h3>
+        <p>Two bathrooms with walk-in showers and glass mosaic tiles. Washing machine included.</p>
+      </div>
+      <div class="room">
+        <img src="images/upstairs-sofa-sm.jpg" alt="Sofa bed in the upstairs lounge" loading="lazy">
+        <h3>Sofa bed for two</h3>
+        <p>In the upstairs lounge, next to the sauna and the pellet stove. The house sleeps 6 comfortably, and 7 at most on request.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="photos">
+  <div class="wrap">
+    <div class="eyebrow">Photos</div>
+    <h2>A look around</h2>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+    <p style="margin-top:22px;text-align:center"><a class="btn ghost" href="https://www.instagram.com/wellnesshouseoliva/">More on Instagram · @wellnesshouseoliva</a></p>
+  </div>
+</section>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <img id="lbImg" alt="">
+  <div class="cap" id="lbCap"></div>
+  <button class="x" id="lbX" aria-label="Close">✕</button>
+  <button class="p" id="lbP" aria-label="Previous">‹</button>
+  <button class="n" id="lbN" aria-label="Next">›</button>
+</div>
+
+<section class="area" id="area">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">The area</div>
+      <h2>Inland calm, coast nearby</h2>
+      <p class="lead">Martinski sits in the green hills of eastern Istria. Medieval Labin is up the road, the pebble beaches of Rabac below it. Marked cycling routes run through the hills, and Bike Park Rabac is by the coast.</p>
+      <ul class="distances">
+        <li><span>Labin old town</span><span>10 km</span></li>
+        <li><span>Rabac beaches</span><span>14 km</span></li>
+        <li><span>Pula airport</span><span>45 km</span></li>
+        <li><span>Rovinj</span><span>about 1 h</span></li>
+      </ul>
+    </div>
+    <div class="area-pics">
+      <img src="images/beach-sm.jpg" alt="Pebble beach on the Istrian coast" loading="lazy">
+      <img src="images/bike-trail-sm.jpg" alt="Marked bike trail" loading="lazy">
+      <img src="images/bike-park-sm.jpg" alt="Bike Park Rabac" loading="lazy">
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="map">
+      <iframe title="Map of the area around Martinski, Labin" loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=13.88%2C45.04%2C14.22%2C45.21&amp;layer=mapnik"></iframe>
+      <div class="ring"></div>
+      <div class="lbl">Oliva is here – Martinski</div>
+    </div>
+    <div class="map-foot">
+      <span>We send you the exact address and directions after booking.</span>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Martinski%2C+Labin%2C+Croatia">Open the area in Google Maps →</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="eyebrow">Guest reviews</div>
+    <h2>What our guests say</h2>
+    <div class="rev-grid" id="revGrid"></div>
+    <p class="small" style="margin-top:22px">Excerpts from real guest reviews on Airbnb, Booking.com and Google; German reviews translated into English. Full reviews on
+      <a href="https://www.airbnb.co.uk/rooms/747012654298873147">Airbnb</a> and
+      <a href="https://www.booking.com/hotel/hr/house-oliva-martinski.html">Booking.com</a>.</p>
+  </div>
+</section>
+
+<section class="hosts">
+  <div class="wrap">
+    <div class="eyebrow">Your hosts</div>
+    <blockquote>"We look after Oliva ourselves. Write to us directly. You'll get an answer from us, not from a call centre."</blockquote>
+    <cite>Marina &amp; Mario</cite>
+  </div>
+</section>
+
+<section class="enquire" id="enquire">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <div class="eyebrow" style="color:var(--sage)">Enquire</div>
+      <h2>Ask about your dates</h2>
+      <p class="lead">Tell us when you'd like to come. We'll reply personally with availability and the price for your stay.</p>
+      <p class="small" style="color:#c4cab0;margin-top:22px">Prefer a platform? Oliva is also on
+        <a href="https://www.airbnb.co.uk/rooms/747012654298873147">Airbnb</a> and
+        <a href="https://www.booking.com/hotel/hr/house-oliva-martinski.html">Booking.com</a>.</p>
+      <div style="margin-top:28px;font-size:16px;line-height:2">
+        ✉️ <a id="cEmail" href="mailto:wellnesshouse.oliva@web.de">wellnesshouse.oliva@web.de</a><br>
+        📞 <a id="cPhone" href="tel:+491741857305">+49 174 1857305</a><br>
+        💬 <a href="https://wa.me/491741857305">WhatsApp</a><br>
+        📸 <a href="https://www.instagram.com/wellnesshouseoliva/">Instagram @wellnesshouseoliva</a>
+      </div>
+    </div>
+    <form id="f" novalidate>
+      <label>Arrival<input type="date" id="arr" required></label>
+      <label>Departure<input type="date" id="dep" required></label>
+      <label>Adults<select id="adults"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></label>
+      <label>Children<select id="kids"><option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+      <div class="checks full">
+        <label><input type="checkbox" id="dog"> Bringing a dog 🐕</label>
+        <label><input type="checkbox" id="heat"> Pool heating (extra charge)</label>
+      </div>
+      <label>Your name<input id="name" autocomplete="name" required></label>
+      <label>Your email<input id="email" type="email" autocomplete="email" required></label>
+      <label class="full">Message (optional)<textarea id="msg" rows="3" placeholder="Anything we should know?"></textarea></label>
+      <p class="err" id="err"></p>
+      <div class="full"><button class="btn" type="submit">Prepare my enquiry</button></div>
+      <div class="out" id="out">
+        <strong>Your enquiry is ready. Send it the way you prefer:</strong>
+        <pre id="txt"></pre>
+        <div class="row">
+          <a class="btn" id="mail" href="#">Send by email</a>
+          <a class="btn ghost" id="wa" href="#">Send via WhatsApp</a>
+          <a class="btn ghost" id="call" href="#">Call us</a>
+          <button class="btn ghost" type="button" id="copy">Copy text</button>
+        </div>
+        <p class="small" id="contact" style="margin-top:12px"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Wellness House Oliva · Martinski, Labin · Istria, Croatia<br>
+      <a href="mailto:wellnesshouse.oliva@web.de">wellnesshouse.oliva@web.de</a> · <a href="tel:+491741857305">+49 174 1857305</a> · <a href="https://www.instagram.com/wellnesshouseoliva/">Instagram</a></div>
+    <div><a href="#top">Back to top</a></div>
+  </div>
+</footer>
+
+<script>
+  /* ====== EDIT THESE TWO LINES ====== */
+  const CONFIG = {
+    email: "wellnesshouse.oliva@web.de",
+    phone: "+491741857305",           // for the "Call us" button
+    phoneDisplay: "+49 174 1857305",
+    whatsapp: "491741857305"    // international format, digits only – leave empty to hide the button
+  };
+  /* ================================== */
+
+  const $ = id => document.getElementById(id);
+
+  /* ---------- Gallery ---------- */
+  const PHOTOS = [
+    ["drone","The house, pool and garden from above","Outside"],
+    ["pool-house","Pool and house","Outside"],
+    ["pool-wide","The saltwater pool","Wellness"],
+    ["pool-mosaic","The olive tree mosaic on the pool floor","Wellness"],
+    ["jacuzzi","Jacuzzi with a view over the garden","Wellness"],
+    ["jacuzzi-terrace","The covered jacuzzi terrace","Wellness"],
+    ["sauna","Infrared sauna","Wellness"],
+    ["sauna-inside","Inside the sauna","Wellness"],
+    ["pool","Poolside under the parasol","Outside"],
+    ["poolside","A quiet corner by the pool","Outside"],
+    ["loungers","Loungers in the shade","Outside"],
+    ["pool-tree","Under the mulberry tree","Outside"],
+    ["pool-low","Pool and house","Outside"],
+    ["pool-house-2","Late afternoon by the pool","Outside"],
+    ["terrace-bbq","Dining terrace and barbecue","Outside"],
+    ["garden-bbq","Garden and barbecue terrace","Outside"],
+    ["drone-side","From above","Outside"],
+    ["drone-top","The whole plot","Outside"],
+    ["house-front","The house from the lane","Outside"],
+    ["olive-tree","Olive tree by the pool","Outside"],
+    ["garden-slope","The garden in autumn","Outside"],
+    ["pomegranate","Pomegranates in the garden","Outside"],
+    ["fence","The fenced garden","Outside"],
+    ["living-room","Living room with fireplace","Inside"],
+    ["sofa","Living room","Inside"],
+    ["fireplace","Pellet fireplace","Inside"],
+    ["reading-chair","Reading corner","Inside"],
+    ["dining","Dining table","Inside"],
+    ["kitchen","Kitchen","Inside"],
+    ["kitchen-view","View from the kitchen sink","Inside"],
+    ["stairs","Stone staircase","Inside"],
+    ["upstairs-lounge","Upstairs lounge with sauna","Inside"],
+    ["upstairs-sofa","Upstairs lounge with sofa bed for two","Bedrooms"],
+    ["upstairs-landing","Landing to the jacuzzi terrace","Inside"],
+    ["bedroom-1","Bedroom one","Bedrooms"],
+    ["bedroom-1b","Bedroom one","Bedrooms"],
+    ["bedroom-2","Bedroom two","Bedrooms"],
+    ["bedroom-desk","Desk in bedroom two","Bedrooms"],
+    ["bedroom-detail","Bedside light","Bedrooms"],
+    ["bedroom-window","Lilac outside the window","Bedrooms"],
+    ["bathroom-1","Bathroom","Bedrooms"],
+    ["shower","Walk-in shower","Bedrooms"],
+    ["bathroom-2","Bathroom","Bedrooms"],
+    ["bathroom-upstairs","Upstairs bathroom","Bedrooms"],
+    ["beach","The coast near Rabac","Area"],
+    ["bike-trail","Marked bike trail","Area"],
+    ["bike-park","Bike Park Rabac","Area"]
+  ];
+  const CATS = ["All","Outside","Wellness","Inside","Bedrooms","Area"];
+  const LABELS = {Bedrooms:"Bedrooms & baths"};
+  let current = "All", shown = [], idx = 0;
+
+  function renderFilters(){
+    $("filters").innerHTML = CATS.map(c => `<button data-c="${c}" class="${c===current?"on":""}">${LABELS[c]||c}</button>`).join("");
+    $("filters").querySelectorAll("button").forEach(b => b.onclick = () => { current = b.dataset.c; renderFilters(); renderGrid(); });
+  }
+  function renderGrid(){
+    shown = PHOTOS.filter(p => current==="All" || p[2]===current);
+    $("grid").innerHTML = shown.map((p,i) => `<button data-i="${i}" aria-label="${p[1]}"><img src="images/${p[0]}-sm.jpg" alt="${p[1]}" loading="lazy"></button>`).join("");
+    $("grid").querySelectorAll("button").forEach(b => b.onclick = () => openLb(+b.dataset.i));
+  }
+  function openLb(i){ idx = (i + shown.length) % shown.length; const p = shown[idx];
+    $("lbImg").src = `images/${p[0]}.jpg`; $("lbImg").alt = p[1]; $("lbCap").textContent = `${p[1]} · ${idx+1} / ${shown.length}`;
+    $("lb").classList.add("on"); document.body.style.overflow = "hidden"; }
+  function closeLb(){ $("lb").classList.remove("on"); document.body.style.overflow = ""; }
+  $("lbX").onclick = closeLb; $("lbP").onclick = () => openLb(idx-1); $("lbN").onclick = () => openLb(idx+1);
+  $("lb").addEventListener("click", e => { if (e.target === $("lb")) closeLb(); });
+  document.addEventListener("keydown", e => { if (!$("lb").classList.contains("on")) return;
+    if (e.key==="Escape") closeLb(); if (e.key==="ArrowLeft") openLb(idx-1); if (e.key==="ArrowRight") openLb(idx+1); });
+  let tx = null;
+  $("lb").addEventListener("touchstart", e => tx = e.touches[0].clientX, {passive:true});
+  $("lb").addEventListener("touchend", e => { if (tx===null) return; const dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 50) openLb(idx + (dx < 0 ? 1 : -1)); tx = null; });
+  renderFilters(); renderGrid();
+
+  /* ---------- Reviews: add more as [quote, name, date or country, platform, translated?] ---------- */
+  const REVIEWS = [
+    ["Simply perfect for anyone travelling with dogs, a beautiful property. Mario is very accommodating and always ready to help. Truly the most pleasant holiday so far.","Franz, Heidi & Lukas","July 2025","Airbnb",true],
+    ["It was so clean, peaceful, and relaxing. We brought our 5 & 12 year old, they enjoyed the pool and hot tub but especially the hot tub during the cold nights. I couldn't have asked for a better place to stay.","Jessica","March 2024","Airbnb",false],
+    ["Great whirlpool and sauna, ideal for winter evenings. Everything beautifully clean, very comfortable beds and a fully equipped kitchen where nothing is missing.","Lubomir","December 2025","Airbnb",true],
+    ["The house is beautifully designed, very modern and with lots of natural stone, in the typical style of Istrian houses. The garden is laid out on several levels and completely fenced. For our dog it was simply perfect.","M. B.","2026","Google",true],
+    ["There is a big garden that is completely fenced – perfect for dogs. Mario was always reachable and gave us good recommendations for beaches and restaurants. We'd love to come back!","Lena F.","2026","Google",true],
+    ["Great brand new jacuzzi on the balcony, so it was great to be able to enjoy being outside even in February.","Ivan","Croatia","Booking.com",false],
+    ["Perfect for a relaxing, romantic and peaceful getaway.","Mirjam","Slovenia","Booking.com",false],
+    ["Very nice house in a very quiet and relaxing environment.","Stéphane","Belgium","Booking.com",false]
+  ];
+  $("revGrid").innerHTML = REVIEWS.map(r => `<figure class="rev"><span class="src">${r[3]}${r[3]==="Booking.com" ? "" : " · ★★★★★"}</span><q>${r[0]}</q><figcaption class="who">${r[1]} · ${r[2]}${r[4] ? " · translated from German" : ""}</figcaption></figure>`).join("");
+
+  /* ---------- Enquiry ---------- */
+  const fmt = d => d ? new Date(d + "T12:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}) : "";
+  const today = new Date().toISOString().slice(0,10);
+  $("arr").min = today; $("dep").min = today;
+  $("arr").addEventListener("change", () => { $("dep").min = $("arr").value || today; });
+
+  $("f").addEventListener("submit", e => {
+    e.preventDefault();
+    const err = $("err"); err.style.display = "none";
+    const a = $("arr").value, d = $("dep").value, n = $("name").value.trim(), em = $("email").value.trim();
+    let problem = "";
+    if (!a || !d) problem = "Please choose your arrival and departure dates.";
+    else if (d <= a) problem = "Departure must be after arrival.";
+    else if (!n) problem = "Please add your name.";
+    else if (!/^\S+@\S+\.\S+$/.test(em)) problem = "Please add a valid email address.";
+    else if (+$("adults").value + +$("kids").value > 7) problem = "The house sleeps 7 guests at most.";
+    if (problem) { err.textContent = problem; err.style.display = "block"; return; }
+
+    const nights = Math.round((new Date(d) - new Date(a)) / 864e5);
+    const lines = [
+      "Hello Marina & Mario,", "",
+      "I'd like to ask about a stay at Wellness House Oliva:",
+      `• ${fmt(a)} – ${fmt(d)} (${nights} night${nights>1?"s":""})`,
+      `• ${$("adults").value} adult(s), ${$("kids").value} child(ren)`,
+      `• Dog: ${$("dog").checked ? "yes" : "no"}`,
+      `• Pool heating: ${$("heat").checked ? "yes, please" : "no"}`
+    ];
+    const m = $("msg").value.trim();
+    if (m) lines.push("", m);
+    lines.push("", "Best regards,", n, em);
+    const text = lines.join("\n");
+    $("txt").textContent = text;
+
+    const subject = `Enquiry ${fmt(a)} – ${fmt(d)}`;
+    const mail = $("mail"), wa = $("wa");
+    mail.style.display = CONFIG.email ? "" : "none";
+    wa.style.display = CONFIG.whatsapp ? "" : "none";
+    if (CONFIG.email) mail.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
+    if (CONFIG.whatsapp) wa.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
+    $("call").style.display = CONFIG.phone ? "" : "none";
+    if (CONFIG.phone) $("call").href = `tel:${CONFIG.phone}`;
+    const bits = [];
+    if (CONFIG.email) bits.push(`Email: ${CONFIG.email}`);
+    if (CONFIG.phone) bits.push(`Phone: ${CONFIG.phoneDisplay || CONFIG.phone}`);
+    if (CONFIG.whatsapp) bits.push(`WhatsApp: +${CONFIG.whatsapp}`);
+    $("contact").textContent = bits.length ? bits.join(" · ") : "Contact details coming soon – please copy the text for now.";
+    $("out").classList.add("show");
+    $("out").scrollIntoView({behavior:"smooth", block:"nearest"});
+  });
+
+  $("copy").addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText($("txt").textContent); $("copy").textContent = "Copied ✓"; }
+    catch { $("copy").textContent = "Select the text above to copy"; }
+    setTimeout(() => $("copy").textContent = "Copy text", 2500);
+  });
+</script>
+</body>
+</html>
